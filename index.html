@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrimonial Bio-Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bio-card">
+      <h1 class="title">MATRIMONIAL BIO-DATA</h1>
+
+      <!-- Profile Image -->
+      <div class="profile-top">
+        <img
+          id="profilePreview"
+          src="./IMG_20250417_140421_854 (1).JPG"
+          alt="Profile Picture"
+        />
+        <input type="file" id="profileInput" accept="image/*" />
+      </div>
+
+      <form id="bioForm">
+        <!-- Personal Information -->
+        <section>
+          <h2>Personal Information</h2>
+          <table>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" id="name" /></td>
+            </tr>
+            <tr>
+              <td>Date of Birth</td>
+              <td><input type="date" id="dob" /></td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td><input type="number" id="age" /></td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <select id="gender">
+                  <option value="">Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Marital Status</td>
+              <td>
+                <select id="marital">
+                  <option value="">Select</option>
+                  <option>Never Married</option>
+                  <option>Divorced</option>
+                  <option>Widowed</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td><input type="text" id="height" placeholder="5'7&quot;" /></td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td><input type="text" id="weight" /></td>
+            </tr>
+            <tr>
+              <td>Blood Group</td>
+              <td><input type="text" id="blood" /></td>
+            </tr>
+            <tr>
+              <td>Religion</td>
+              <td><input type="text" id="religion" /></td>
+            </tr>
+            <tr>
+              <td>Nationality</td>
+              <td><input type="text" id="nationality" /></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Education -->
+        <section>
+          <h2>Education & Career</h2>
+          <table>
+            <tr>
+              <td>Highest Qualification</td>
+              <td><input type="text" id="qualification" /></td>
+            </tr>
+            <tr>
+              <td>Profession</td>
+              <td><input type="text" id="profession" /></td>
+            </tr>
+            <tr>
+              <td>Organization</td>
+              <td><input type="text" id="organization" /></td>
+            </tr>
+            <tr>
+              <td>Monthly Income</td>
+              <td><input type="text" id="income" /></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Family -->
+        <section>
+          <h2>Family Details</h2>
+          <table>
+            <tr>
+              <td>Father's Name</td>
+              <td><input type="text" id="father" /></td>
+            </tr>
+            <tr>
+              <td>Father's Occupation</td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Mother's Name</td>
+              <td><input type="text" id="mother" /></td>
+            </tr>
+            <tr>
+              <td>Mother's Occupation</td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Siblings</td>
+              <td><input type="text" id="siblings" /></td>
+            </tr>
+            <tr>
+              <td>Family Type</td>
+              <td>
+                <select id="familyType">
+                  <option value="">Select</option>
+                  <option>Nuclear</option>
+                  <option>Joint</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Contact -->
+        <section>
+          <h2>Contact Information</h2>
+          <table>
+            <tr>
+              <td>Present Address</td>
+              <td><textarea id="address"></textarea></td>
+            </tr>
+            <tr>
+              <td>Mobile Number</td>
+              <td><input type="tel" id="mobile" /></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><input type="email" id="email" /></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Partner -->
+        <section>
+          <h2>Partner Preference</h2>
+          <table>
+            <tr>
+              <td>Preferred Age Range</td>
+              <td><input type="text" id="ageRange" placeholder="22-28" /></td>
+            </tr>
+            <tr>
+              <td>Preferred Height</td>
+              <td><input type="text" id="prefHeight" /></td>
+            </tr>
+            <tr>
+              <td>Education</td>
+              <td><input type="text" id="prefEdu" /></td>
+            </tr>
+            <tr>
+              <td>Other Expectations</td>
+              <td><textarea id="expect"></textarea></td>
+            </tr>
+          </table>
+        </section>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
